@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply p-0 m-0;
+}
+/* style navbar connecte relative relative */
+.navcontainer{
+  @apply -top-14 relative z-50 iphone:-top-12
+}
+.container{
+  @apply  bg-red-500 flex items-center justify-between border-b-2 border-yellow-500 shadow shadow-yellow-800 px-2  iphone:w-[99%] iphonese:w-[97%] iphonexr:w-[99%] iphone:justify-between
+}
+.imagelogo{
+  @apply w-[80px] iphone:w-10
+}
+.titrelogo{
+  @apply text-lg text-blue-900 iphone:text-sm
+}
+.containerlist{
+ @apply flex -ml-36 iphone:-ml-2 
+}
+.listcontainer{
+  @apply mr-4 cursor-pointer
+}
+.souslistcontainer{
+  @apply absolute left-[70rem] w-60 text-center 
+}
+.souslist{
+  @apply  bg-white  mt-[30px] shadow-sm shadow-yellow-800 
+}
+.souslistcontainerHelp{
+  @apply absolute left-[70rem]
+}
+.souslistHelp{
+  @apply  bg-sky-600 mt-7 
+}
+
+
+/* style body */
+body{
+  @apply font-serif
+}
+
+/* style des composants de connexion et de deconnexion */
+.Btnauthentification {
+  @apply border border-blue-400 rounded p-1 text-blue-400 mt-3 cursor-pointer hover:bg-blue-400 hover:text-white hover:border hover:border-neutral-400 hover:transition-[0.8s];
+}
+.Btnconnexion {
+  @apply border border-blue-400 mt-9 ml-[100px] text-blue-400 p-1 rounded cursor-pointer  hover:bg-blue-400 hover:text-white hover:border hover:border-neutral-400 hover:transition-[0.8s] iphone:ml-[50px];
+}
+.formcontainer{
+   @apply border border-orange-300 w-[300px] px-4 text-sm rounded iphone:w-[200px]
+}
+.titleform{
+ @apply text-center text-2xl text-orange-500 iphone:text-lg
+}
+
+/* style caroussel */
+.thumbs.animated{
+  @apply hidden 
+}
+.control-arrow.control-prev{
+  /* @apply h-[692px] iphone:h-[346px] hidden */
+}
+.control-arrow.control-next{
+  /* @apply h-[692px] iphone:h-[346px] hidden */
+}
+.presentationcarousel{
+  @apply text-5xl w-[24rem] text-left ml-14 opacity-100 iphone:w-[6rem] iphone:text-sm iphone:m-4 iphone:text-white
+}
+.presentationcarousel2{
+  @apply text-xl text-left  ml-24 iphone:text-sm iphone:ml-2
+}
+
+.presentationcarousel3{
+  @apply bg-green-600 w-[39%] p-10 bg-opacity-80 iphone:w-[39%] iphone:p-2
+}
+
+/* iconAffiche style */
+.containerIconAffiche{
+  @apply mt-[3%] mb-[6%] mx-8 grid grid-cols-3 gap-3 iphone:grid-cols-1 iphone:left-3 iphone:mx-3 iphonexr:mx-8 iphone12:mx-5
+}
+.IconAffichecontainer{
+  @apply w-96 rounded rounded-t-lg text-neutral-400 shadow hover:shadow-yellow-900 hover:transition-[0.1s] hover:text-black iphone:w-[22rem] iphone:shadow iphone:hover:shadow-none iphone:hover:transition-none iphone:text-black 
+}
+.IconAfficheImg{
+  @apply h-[360px] rounded-t-lg w-[400px] object-cover hover:object-cover hover:w-[360] hover:cursor-pointer iphone:h-[300px]
+}
+.IconAfficheElements{
+  @apply  w-[10%x] p-3 text-xl text-center 
+}
+
+/* style pub */
+.control-dots{
+  @apply hidden
+}
